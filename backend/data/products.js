@@ -1,6 +1,6 @@
 const products = [
   {
-    _id: '1',
+     
     name: 'RX6421',
     image: '/images/sample1.jpg',
     description: '',
@@ -14,7 +14,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
+    
     name: 'RX8905',
     image: '/images/sample2.jpg',
     description: '',
@@ -28,7 +28,7 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
+ 
     name: 'NIKE 7246',
     image: '/images/sample3.jpg',
     description: '',
@@ -42,7 +42,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
+   
     name: 'NIKE 8048',
     image: '/images/sample4.jpg',
     description: '',
@@ -56,7 +56,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
+   
     name: 'LO2675',
     image: '/images/sample5.jpg',
     description: '',
@@ -70,7 +70,7 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
+    
     name: 'LO2687',
     image: '/images/sample6.jpg',
     description: '',
@@ -84,7 +84,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '7',
+    
     name: 'TF5740-B',
     image: '/images/sample7.jpg',
     description: '',
@@ -98,7 +98,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '8',
+    
     name: 'TF5750-B',
     image: '/images/sample8.jpg',
     description: '',
@@ -112,7 +112,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '9',
+    
     name: 'RY1902',
     image: '/images/sample9.jpg',
     description: '',
@@ -126,7 +126,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '10',
+    
     name: 'RY9083V',
     image: '/images/sample10.jpg',
     description: '',
@@ -140,7 +140,6 @@ const products = [
     numReviews: 7,
   },
   {
-    _id: '11',
     name: 'Funffeti',
     image: '/images/sample11.jpg',
     description: '',
@@ -154,7 +153,7 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: '12',
+     
     name: 'fairlie',
     image: '/images/sample12.jpg',
     description: '',
@@ -168,7 +167,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '13',
+     
     name: 'TF0844',
     image: '/images/sample13.jpg',
     description: '',
@@ -182,7 +181,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '14',
+     
     name: 'LO625S',
     image: '/images/sample14.jpg',
     description: '',
@@ -196,7 +195,7 @@ const products = [
     numReviews: 6,
   },
   {
-    _id: '15',
+     
     name: 'OO9263',
     image: '/images/sample15.jpg',
     description: '',
@@ -210,7 +209,7 @@ const products = [
     numReviews: 6,
   },
   {
-    _id: '16',
+     
     name: 'OO9444',
     image: '/images/sample16.jpg',
     description: '',

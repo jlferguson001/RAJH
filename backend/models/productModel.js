@@ -51,13 +51,13 @@ const productSchema = mongoose.Schema({
     },
 
     price: {
-      type: Numeric,
+      type: Number,
       required: true,
       deafult: 0,
     },
     
     countInStock: {
-      type: Numeric,
+      type: Number,
       required: true,
     },
 
