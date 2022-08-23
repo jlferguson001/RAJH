@@ -52,9 +52,9 @@ const [qty, setQty] = useState(1)
                   text={`${product.numReviews} reviews`}
                 />
               </ListGroup.Item>
-              <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+               
               <ListGroup.Item>
-                Description: {product.description}
+               
               </ListGroup.Item>
             </ListGroup>
           </Col>

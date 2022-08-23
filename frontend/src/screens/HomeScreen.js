@@ -5,7 +5,8 @@ import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { listProducts } from '../actions/productActions'
- 
+import Developer from '../components/Developer'
+import developers from '../developers' 
 
 
 const HomeScreen = () => {
@@ -24,9 +25,9 @@ const HomeScreen = () => {
   return (
     <>
       {loading ? (
-       <Loader />
+        <Loader />
       ) : error ? (
-       <Message variant ='danger'>{error}</Message>
+        <Message variant='danger'>{error}</Message>
       ) : (
         <Row>
           {' '}
@@ -37,6 +38,15 @@ const HomeScreen = () => {
           ))}
         </Row>
       )}
+      <h1>Your Developers</h1>
+      <Row>
+        {developers.map((developer) => (
+          // number of columns per screen
+          <Col key={developer._id} sm={12} md={6} lg={4} xl={3}>
+            <Developer developer={developer} />
+          </Col>
+        ))}
+      </Row>
     </>
   )
 }

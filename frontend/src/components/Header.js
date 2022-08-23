@@ -8,15 +8,15 @@ const Header = () => {
     <header>
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
-          <Navbar.Brand href='/'>RAJH Frames</Navbar.Brand>     
+          <Navbar.Brand href='/'>RAJH Frames</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>
-              <Nav.Link to='/'>Home</Nav.Link>
-              <Nav.Link to='/Mens'> Men's </Nav.Link>
-              <Nav.Link to='/Womens'>Women's</Nav.Link>
-              <Nav.Link to='/Childrens'>Children's</Nav.Link>
-              <Nav.Link to='/sunglasses'>Sunglasses</Nav.Link>
+              <Nav.Link href='/'>Home</Nav.Link>
+              <Nav.Link href='/Mens'> Men's </Nav.Link>
+              <Nav.Link href='/Womens'>Women's</Nav.Link>
+              <Nav.Link href='/Childrens'>Children's</Nav.Link>
+              <Nav.Link href='/sunglasses'>Sunglasses</Nav.Link>
             </Nav>
             <Nav className='ms-auto'>
               {/* importing icons from font awesome, import was saved in index.html */}
