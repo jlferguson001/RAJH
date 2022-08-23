@@ -224,4 +224,6 @@ const products = [
     numReviews: 7,
   },
 ]
-export default products
+
+
+module.exports = products
