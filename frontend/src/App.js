@@ -19,6 +19,7 @@ const App = () => {
           <h1> Welcome to RAJH Frames</h1>
           {/* <HomeScreen /> */}
           <Route path= '/' component={HomeScreen} exact />
+          <Route path= '/products/Mens' component={HomeScreen} exact />
           <Route path= '/product/:id' component={ProductScreen} />
           <Route path= '/cart/:id?' component={CartScreen} />
         </Container>
