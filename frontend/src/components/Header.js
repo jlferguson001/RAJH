@@ -14,9 +14,8 @@ const Header = () => {
             <Nav className='me-auto'>
               <Nav.Link href='/'>Home</Nav.Link>
               <Nav.Link href='/products/Mens'> Men's </Nav.Link>
-              <Nav.Link href='/Womens'>Women's</Nav.Link>
-              <Nav.Link href='/Childrens'>Children's</Nav.Link>
-              <Nav.Link href='/sunglasses'>Sunglasses</Nav.Link>
+              <Nav.Link href='/products/Womens'>Women's</Nav.Link>
+              <Nav.Link href='/products/Childrens'>Children's</Nav.Link>
             </Nav>
             <Nav className='ms-auto'>
               {/* importing icons from font awesome, import was saved in index.html */}

@@ -14,9 +14,9 @@ router.get(
   })
 )
 
-router.get('/products/Mens', 
+router.get('/products/:category', 
   asyncHandler(async (req, res) => {
-    const products = await Product.find({category: "Mens"})
+    const products = await Product.find({category: req.params.category})
     res.json(products)
   }))
 
