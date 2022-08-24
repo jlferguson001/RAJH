@@ -5,6 +5,9 @@ import {
   PRODUCT_DETAILS_REQUEST,
   PRODUCT_DETAILS_SUCCESS,
   PRODUCT_DETAILS_FAIL,
+  PRODUCT_LIST_CATEGORY_REQUEST,
+  PRODUCT_LIST_CATEGORY_SUCCESS,
+  PRODUCT_LIST_CATEGORY_FAIL
 } from '../constants/productConstants'
 
 //handle state for product list we see on the home page (takes in inital state (object) and action) has a type eval below, and contain a payload that we fetch from the server.
@@ -57,3 +60,24 @@ export const productDetailsReducer = (
 
 //to use the reducer we have to add it to our store
 //CREATED CONSTANTS
+
+export const productListCategoryReducer = (state = { products: [] }, action) => {
+  switch (action.type) {
+    //make the request
+    case PRODUCT_LIST_CATEGORY_REQUEST:
+      //curently loading
+      return { loading: true, products: [] }
+
+    //successful resonse
+    case PRODUCT_LIST_CATEGORY_SUCCESS:
+      //done loading done making a request as to why it is false
+      return { loading: false, products: action.payload }
+
+    //if it fails send error through the state
+    case PRODUCT_LIST_CATEGORY_FAIL:
+      return { loading: false, error: action.payload }
+
+    default:
+      return state
+  }
+}

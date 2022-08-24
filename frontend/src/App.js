@@ -6,7 +6,7 @@ import { Container} from 'react-bootstrap'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import CartScreen from './screens/CartScreen'
-
+import CategoryScreen from './screens/CategoryScreen'
 
 const App = () => {
 
@@ -19,7 +19,7 @@ const App = () => {
           <h1> Welcome to RAJH Frames</h1>
           {/* <HomeScreen /> */}
           <Route path= '/' component={HomeScreen} exact />
-          <Route path= '/products/Mens' component={HomeScreen} exact />
+          <Route path= '/products/:category' component={CategoryScreen} exact />
           <Route path= '/product/:id' component={ProductScreen} />
           <Route path= '/cart/:id?' component={CartScreen} />
         </Container>

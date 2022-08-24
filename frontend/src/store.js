@@ -3,6 +3,7 @@ import thunk from 'redux-thunk'
 import {
   productListReducer,
   productDetailsReducer,
+  productListCategoryReducer
 } from './reducers/productReducers'
 import {cartReducer} from './reducers/cartReducers'
 
@@ -11,6 +12,7 @@ const preloadedState = {}
 const reducer = {
   productList: productListReducer,
   productDetails: productDetailsReducer,
+  productListCategory: productListCategoryReducer,
   cart: cartReducer,
 }
 

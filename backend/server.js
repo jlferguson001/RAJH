@@ -21,6 +21,11 @@ app.use(notFound)
 
 app.use(errorHandler)
 
+app.get('/api/products/:category', (req, res) => {
+  const product = products.find((p) => p._id === req.params.id)
+  res.json(product)
+})
+
 app.get('/api/products/:id', (req, res) => {
   const product = products.find((p) => p._id === req.params.id)
   res.json(product)

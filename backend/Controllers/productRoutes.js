@@ -6,8 +6,6 @@ import Product from '../models/productModel.js'
 
 
 //  description:  fetch all products
-// route          Get/api/products
-// access         Public
 router.get(
   '/',
   asyncHandler(async (req, res) => {
@@ -16,10 +14,14 @@ router.get(
   })
 )
 
-//  description:  fetch single products
-// route          Get/api/products/:id
-// access         Public
+router.get('/products/:category', 
+  asyncHandler(async (req, res) => {
+    const products = await Product.find({category: req.params.category})
+    res.json(products)
+  }))
 
+
+//  description:  fetch single products
 router.get(
   '/products/:category',
   asyncHandler(async (req, res) => {
