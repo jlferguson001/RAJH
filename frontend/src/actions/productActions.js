@@ -7,6 +7,9 @@ import {
   PRODUCT_DETAILS_REQUEST,
   PRODUCT_DETAILS_SUCCESS,
   PRODUCT_DETAILS_FAIL,
+  PRODUCT_LIST_CATEGORY_REQUEST,
+  PRODUCT_LIST_CATEGORY_SUCCESS,
+  PRODUCT_LIST_CATEGORY_FAIL
 } from '../constants/productConstants'
 
 //allows action with in an action
@@ -59,3 +62,26 @@ export const listProductDetails = (id) => async (dispatch) => {
 
 //action creators dispatch bakc to the reducers
 //we want to fire off the action in the home screen
+
+export const listProductCategory = (category) => async (dispatch) => {
+  try {
+    //want to dispatch the request.  pass in an object with a type.  This will call in the reducer
+    dispatch({ type: PRODUCT_LIST_CATEGORY_REQUEST })
+    //we want to now make our request
+    const { data } = await axios.get(`/api/products/${category}`)
+
+    dispatch({
+      type: PRODUCT_LIST_CATEGORY_SUCCESS,
+      payload: data,
+    })
+  } catch (error) {
+    dispatch({
+      type: PRODUCT_LIST_CATEGORY_FAIL,
+      //this is an if else statement  : = else
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    })
+  }
+}
