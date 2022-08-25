@@ -7,9 +7,12 @@ import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import CartScreen from './screens/CartScreen'
 import CategoryScreen from './screens/CategoryScreen'
+import { useParams } from 'react-router-dom'
 
 const App = () => {
 
+  // const params = useParams()
+  // console.log(params.category)
   return (
      
     <Router>

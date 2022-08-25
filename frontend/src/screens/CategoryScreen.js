@@ -4,7 +4,6 @@ import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import { listProducts } from '../actions/productActions'
 import Developer from '../components/Developer'
 import developers from '../developers' 
 import {  listProductCategory } from '../actions/productActions'
@@ -13,13 +12,18 @@ import { useParams } from 'react-router-dom'
 const CategoryScreen = () => {
  const dispatch= useDispatch()
      
- const productList = useSelector(state => state.productList)
- const{loading, error, products} = productList
+ const productListCategory = useSelector(state => state.productListCategory)
+ const{loading, error, products} = productListCategory
  const { category } = useParams()
-    // useEffect(() => {
-    //     dispatch(productListCategoryReducer(category))
-    // }, [category])
-console.log(category)
+
+    useEffect(() => {
+        dispatch(listProductCategory)
+    }, [dispatch])
+// console.log(category)
+
+
+
+
   return (
     <>
       {loading ? (
@@ -29,7 +33,9 @@ console.log(category)
       ) : (
         <Row>
           {' '}
-          {products.map((product) => (
+          {products
+          .filter((list) => list.category === category)
+          .map((product) => (
             <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
               <Product product={product} />
             </Col>
