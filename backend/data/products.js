@@ -2,7 +2,7 @@ const products = [
   {
      
     name: 'RX6421',
-    image: '/images/sample1.jpg',
+    image: '/images/RayBan3.jpg',
     description: '',
     brand: 'RayBan',
     category: 'Mens',
@@ -16,7 +16,7 @@ const products = [
   {
     
     name: 'RX8905',
-    image: '/images/sample2.jpg',
+    image: '/images/RayBan3.jpg',
     description: '',
     brand: 'RayBan',
     category: 'Mens',
@@ -30,7 +30,7 @@ const products = [
   {
  
     name: 'NIKE 7246',
-    image: '/images/sample3.jpg',
+    image: '/images/Nike2.jpg',
     description: '',
     brand: 'Nike',
     category: 'Mens',
@@ -44,7 +44,7 @@ const products = [
   {
    
     name: 'NIKE 8048',
-    image: '/images/sample4.jpg',
+    image: '/images/Nike1.jpg',
     description: '',
     brand: 'Nike',
     category: 'Mens',
@@ -58,7 +58,7 @@ const products = [
   {
    
     name: 'LO2675',
-    image: '/images/sample5.jpg',
+    image: '/images/Longchamp1.jpg',
     description: '',
     brand: 'Longchamp',
     category: 'Womens',
@@ -72,7 +72,7 @@ const products = [
   {
     
     name: 'LO2687',
-    image: '/images/sample6.jpg',
+    image: '/images/Longchamp2.jpg',
     description: '',
     brand: 'Longchamp',
     category: 'Womens',
@@ -86,7 +86,7 @@ const products = [
   {
     
     name: 'TF5740-B',
-    image: '/images/sample7.jpg',
+    image: '/images/TomFord1.jpg',
     description: '',
     brand: 'Tom Ford',
     category: 'Womens',
@@ -100,7 +100,7 @@ const products = [
   {
     
     name: 'TF5750-B',
-    image: '/images/sample8.jpg',
+    image: '/images/TomFord2.jpg',
     description: '',
     brand: 'Tom Ford',
     category: 'Womens',
@@ -114,7 +114,7 @@ const products = [
   {
     
     name: 'RY1902',
-    image: '/images/sample9.jpg',
+    image: '/images/RayBan1.jpg',
     description: '',
     brand: 'RayBan',
     category: 'Childrens',
@@ -128,7 +128,7 @@ const products = [
   {
     
     name: 'RY9083V',
-    image: '/images/sample10.jpg',
+    image: '/images/RayBan2.jpg',
     description: '',
     brand: 'RayBan',
     category: 'Childrens',
@@ -141,7 +141,7 @@ const products = [
   },
   {
     name: 'Funffeti',
-    image: '/images/sample11.jpg',
+    image: '/images/SteveMadden1.jpg',
     description: '',
     brand: 'Steve Madden',
     category: 'Childrens',
@@ -155,7 +155,7 @@ const products = [
   {
      
     name: 'fairlie',
-    image: '/images/sample12.jpg',
+    image: '/images/SteveMadden2.jpg',
     description: '',
     brand: 'Steve Madden',
     category: 'Childrens',
@@ -169,7 +169,7 @@ const products = [
   {
      
     name: 'TF0844',
-    image: '/images/sample13.jpg',
+    image: '/images/TomFord1.jpg',
     description: '',
     brand: 'Tom Ford',
     category: 'Womens',
@@ -183,7 +183,7 @@ const products = [
   {
      
     name: 'LO625S',
-    image: '/images/sample14.jpg',
+    image: '/images/Longchamp2.jpg',
     description: '',
     brand: 'Longchamp',
     category: 'Womens',
@@ -197,7 +197,7 @@ const products = [
   {
      
     name: 'OO9263',
-    image: '/images/sample15.jpg',
+    image: '/images/Oakley1.webp',
     description: '',
     brand: 'Oakley',
     category: 'Mens',
@@ -211,7 +211,7 @@ const products = [
   {
      
     name: 'OO9444',
-    image: '/images/sample16.jpg',
+    image: '/images/Oakley2.webp',
     description: '',
     brand: 'Oakley',
     category: 'Mens',

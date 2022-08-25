@@ -18,5 +18,9 @@ h2 {
   font-size: 1.4rem;
   padding: 0.5rem 0;
 }
+ProductImage {
+  height: 300px;
+  width: 400px;
+}
 
 

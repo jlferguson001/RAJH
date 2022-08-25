@@ -37,7 +37,7 @@ const [qty, setQty] = useState(1)
       ) : (
         <Row>
           <Col md={6}>
-             <Image src={product.image} alt={product.name} />
+             <Image src={product.image} alt={product.name} height="365" width="490"/>
           </Col>
           <Col md={3}>
             <ListGroup variant='flush'>
