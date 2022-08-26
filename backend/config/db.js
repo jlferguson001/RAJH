@@ -2,10 +2,14 @@ import mongoose from 'mongoose'
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
-      useUnifiedTopology: true,
-      useNewUrlParser: true,
-    })
+    const conn = await mongoose.connect(
+      'mongodb+srv://username:RAJH@rajh.cjtpg4k.mongodb.net/RAJHFrames',
+      {
+        useUnifiedTopology: true,
+        useNewUrlParser: true,
+      }
+    )
+
 
     console.log(`MongoDB Connected: ${conn.connection.host}`)
   } catch (error) {
