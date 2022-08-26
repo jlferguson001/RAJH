@@ -5,7 +5,7 @@ This project took many twists and turns.  We started with Postgres and completed
 
 We were able to utilize Git hub with the branches and merging, however, came to a stand still when we wanted to switch databases.  We wanted to show our full effort on this project.
 
-https://github.com/behmaster/Milestone-2-Project (original project with over 77 commits
+https://github.com/behmaster/Milestone-2-Project (original project with over 77 commits)
 https://github.com/estesthebestes/rajh (testing deployment)
 
 We are able to retrieve the category data and display in POSTMAN with the following routes:
