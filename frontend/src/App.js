@@ -11,6 +11,7 @@ import { useParams } from 'react-router-dom'
 import MensScreen from './screens/MensScreen'
 import WomensScreen from './screens/WomensScreen'
 import ChildrensScreen from './screens/ChildrensScreen'
+import ProductListScreen from './screens/ProductListScreen'
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route path= '/products/:category' component={CategoryScreen} exact />
           <Route path= '/products/Womens' component={WomensScreen} exact />
           <Route path= '/products/Childrens' component={ChildrensScreen} exact />
+          <Route path= '/admin/productlist' component={ProductListScreen} exact />
           <Route path= '/product/:id' component={ProductScreen} />
           <Route path= '/cart/:id?' component={CartScreen} />
         </Container>
