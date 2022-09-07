@@ -39,11 +39,7 @@ const productSchema = mongoose.Schema({
       type: String,
       required: true,
     },
-
-    sunglasses: {
-      type: Boolean,
-      required: true,
-    },
+   
 
     color: {
       type: String,

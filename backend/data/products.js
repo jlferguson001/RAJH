@@ -1,12 +1,10 @@
 const products = [
   {
-     
     name: 'RX6421',
     image: '/images/RayBan3.jpg',
     description: '',
     brand: 'RayBan',
     category: 'Mens',
-    sunglasses: 'false',
     color: 'Silver on Grey',
     price: 205.0,
     countInStock: 10,
@@ -14,13 +12,11 @@ const products = [
     numReviews: 12,
   },
   {
-    
     name: 'RX8905',
     image: '/images/RayBan3.jpg',
     description: '',
     brand: 'RayBan',
     category: 'Mens',
-    sunglasses: 'false',
     color: 'Transparent Grey',
     price: 265.0,
     countInStock: 7,
@@ -28,13 +24,11 @@ const products = [
     numReviews: 8,
   },
   {
- 
     name: 'NIKE 7246',
     image: '/images/Nike2.jpg',
     description: '',
     brand: 'Nike',
     category: 'Mens',
-    sunglasses: 'false',
     color: 'Clear',
     price: 265.0,
     countInStock: 5,
@@ -42,13 +36,11 @@ const products = [
     numReviews: 12,
   },
   {
-   
     name: 'NIKE 8048',
     image: '/images/Nike1.jpg',
     description: '',
     brand: 'Nike',
     category: 'Mens',
-    sunglasses: 'false',
     color: 'Satin Black',
     price: 255.0,
     countInStock: 11,
@@ -56,13 +48,11 @@ const products = [
     numReviews: 12,
   },
   {
-   
     name: 'LO2675',
     image: '/images/Longchamp1.jpg',
     description: '',
     brand: 'Longchamp',
     category: 'Womens',
-    sunglasses: 'false',
     color: 'Warm Havana',
     price: 239.0,
     countInStock: 7,
@@ -70,13 +60,11 @@ const products = [
     numReviews: 10,
   },
   {
-    
     name: 'LO2687',
     image: '/images/Longchamp2.jpg',
     description: '',
     brand: 'Longchamp',
     category: 'Womens',
-    sunglasses: 'false',
     color: 'Transparent Grey',
     price: 29.99,
     countInStock: 0,
@@ -84,13 +72,11 @@ const products = [
     numReviews: 12,
   },
   {
-    
     name: 'TF5740-B',
     image: '/images/TomFord1.jpg',
     description: '',
     brand: 'Tom Ford',
     category: 'Womens',
-    sunglasses: 'false',
     color: 'Shiny Black,',
     price: 519.0,
     countInStock: 5,
@@ -98,13 +84,11 @@ const products = [
     numReviews: 12,
   },
   {
-    
     name: 'TF5750-B',
     image: '/images/TomFord2.jpg',
     description: '',
     brand: 'Tom Ford',
     category: 'Womens',
-    sunglasses: 'false',
     color: 'Matte Blue',
     price: 519.0,
     countInStock: 7,
@@ -112,13 +96,11 @@ const products = [
     numReviews: 12,
   },
   {
-    
     name: 'RY1902',
     image: '/images/RayBan1.jpg',
     description: '',
     brand: 'RayBan',
     category: 'Childrens',
-    sunglasses: 'false',
     color: 'Transparent Violet',
     price: 105.0,
     countInStock: 15,
@@ -126,13 +108,11 @@ const products = [
     numReviews: 12,
   },
   {
-    
     name: 'RY9083V',
     image: '/images/RayBan2.jpg',
     description: '',
     brand: 'RayBan',
     category: 'Childrens',
-    sunglasses: 'false',
     color: 'Striped Havana',
     price: 105.0,
     countInStock: 12,
@@ -145,7 +125,6 @@ const products = [
     description: '',
     brand: 'Steve Madden',
     category: 'Childrens',
-    sunglasses: 'false',
     color: 'Blue Multi',
     price: 145,
     countInStock: 5,
@@ -153,13 +132,11 @@ const products = [
     numReviews: 3,
   },
   {
-     
     name: 'fairlie',
     image: '/images/SteveMadden2.jpg',
     description: '',
     brand: 'Steve Madden',
     category: 'Childrens',
-    sunglasses: 'false',
     color: 'Tea Teal',
     price: 29.99,
     countInStock: 0,
@@ -167,13 +144,11 @@ const products = [
     numReviews: 12,
   },
   {
-     
     name: 'TF0844',
     image: '/images/TomFord1.jpg',
     description: '',
     brand: 'Tom Ford',
     category: 'Womens',
-    sunglasses: 'true',
     color: 'Shiny Light Brown',
     price: 415,
     countInStock: 12,
@@ -181,13 +156,11 @@ const products = [
     numReviews: 12,
   },
   {
-     
     name: 'LO625S',
     image: '/images/Longchamp2.jpg',
     description: '',
     brand: 'Longchamp',
     category: 'Womens',
-    sunglasses: 'true',
     color: 'Marable Green',
     price: 145,
     countInStock: 2,
@@ -195,13 +168,11 @@ const products = [
     numReviews: 6,
   },
   {
-     
     name: 'OO9263',
     image: '/images/Oakley1.webp',
     description: '',
     brand: 'Oakley',
     category: 'Mens',
-    sunglasses: 'true',
     color: 'Matte Black',
     price: 225,
     countInStock: 2,
@@ -209,13 +180,11 @@ const products = [
     numReviews: 6,
   },
   {
-     
     name: 'OO9444',
     image: '/images/Oakley2.webp',
     description: '',
     brand: 'Oakley',
     category: 'Mens',
-    sunglasses: 'true',
     color: 'Polished Clear',
     price: 165,
     countInStock: 5,
@@ -223,6 +192,5 @@ const products = [
     numReviews: 7,
   },
 ]
-
 
 export default products

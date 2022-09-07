@@ -58,7 +58,6 @@ const ProductListScreen = () => {
               <th>NAME</th>
               <th>BRAND</th>
               <th>CATEGORY</th>
-              <th>SUNGLASSES</th>
               <th>COLOR</th>
               <th>PRICE</th>
             </tr>
@@ -70,8 +69,7 @@ const ProductListScreen = () => {
                 <td>{product.name}</td>
                 <td>{product.brand}</td>
                 <td>{product.category}</td>
-                <td>{product.sunglasses}</td>
-                <td>{product.price}</td>
+                <td>{product.color}</td>
                 <td>${product.price}</td>
 
                 <td>
