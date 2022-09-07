@@ -14,28 +14,28 @@ router.get(
   })
 )
 
-router.get('/products/:category', 
+router.get('/products/Mens', 
   asyncHandler(async (req, res) => {
-    const products = await Product.find({category: req.params.category})
+    const products = await Product.find({category: Mens})
     res.json(products)
   }))
 
 
-//  description:  fetch single products
-router.get(
-  '/products/:category',
-  asyncHandler(async (req, res) => {
-    const product = await Product.find(
-      { category: req.params.category })
+ 
+// router.get(
+//   '/products/:category',
+//   asyncHandler(async (req, res) => {
+//     const product = await Product.find(
+//       { category: req.params.category })
     
-    if (product) {
-      res.json(product)
-    } else {
-      res.status(404)
-      throw new Error('Product not found')
-    }
-  })
-)
+//     if (product) {
+//       res.json(product)
+//     } else {
+//       res.status(404)
+//       throw new Error('Product not found')
+//     }
+//   })
+// )
 
 
 //  description:  fetch single products
@@ -55,5 +55,15 @@ router.get(
     }
   })
 )
+
+//edit
+
+
+
+//add new
+
+
+//delete
+
 
 export default router
