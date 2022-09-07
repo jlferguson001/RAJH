@@ -7,7 +7,8 @@ import {
   PRODUCT_DETAILS_FAIL,
   PRODUCT_LIST_CATEGORY_REQUEST,
   PRODUCT_LIST_CATEGORY_SUCCESS,
-  PRODUCT_LIST_CATEGORY_FAIL
+  PRODUCT_LIST_CATEGORY_FAIL,
+ 
 } from '../constants/productConstants'
 
 //handle state for product list we see on the home page (takes in inital state (object) and action) has a type eval below, and contain a payload that we fetch from the server.
@@ -81,3 +82,5 @@ export const productListCategoryReducer = (state = { products: [] }, action) => 
       return state
   }
 }
+
+ 

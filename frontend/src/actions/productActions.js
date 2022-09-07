@@ -9,7 +9,8 @@ import {
   PRODUCT_DETAILS_FAIL,
   PRODUCT_LIST_CATEGORY_REQUEST,
   PRODUCT_LIST_CATEGORY_SUCCESS,
-  PRODUCT_LIST_CATEGORY_FAIL
+  PRODUCT_LIST_CATEGORY_FAIL,
+  
 } from '../constants/productConstants'
 
 //allows action with in an action
@@ -85,3 +86,5 @@ export const listProductCategory = (category) => async (dispatch) => {
     })
   }
 }
+
+ 

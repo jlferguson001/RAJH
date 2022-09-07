@@ -70,23 +70,9 @@ const CartScreen = ({ match, location, history }) => {
                     <Button
                       type='button'
                       variant='light'
-                      onClick={() =>  (item.product)}
+                      onClick={() => removeFromCartHandler(item.product)}
                     >
-                      <i>Add to Database</i>
-                    </Button>
-                    <Button
-                      type='button'
-                      variant='light'
-                      onClick={() =>  (item.product)}
-                    >
-                      <i>Edit in Database</i>
-                    </Button>
-                    <Button
-                      type='button'
-                      variant='light'
-                      onClick={() =>  (item.product)}
-                    >
-                      <i>Delete from Database</i>
+                      <i className='fas fa-trash'></i>
                     </Button>
                   </Col>
                 </Row>
@@ -98,18 +84,17 @@ const CartScreen = ({ match, location, history }) => {
       <Col md={4}>
         <Card>
           <ListGroup variant='flush'>
-            {/* <ListGroup.Item>
+            <ListGroup.Item>
               <h2>
                 Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})
                 items
               </h2>
-              $(
+              $
               {cartItems
                 .reduce((acc, item) => acc + item.qty * item.price, 0)
                 .toFixed(2)}
-              )
-            </ListGroup.Item> */}
-            {/* <ListGroup.Item>
+            </ListGroup.Item>
+            <ListGroup.Item>
               <Button
                 type='button'
                 className='btn-block'
@@ -118,7 +103,7 @@ const CartScreen = ({ match, location, history }) => {
               >
                 Proceed To Checkout
               </Button>
-            </ListGroup.Item> */}
+            </ListGroup.Item>
           </ListGroup>
         </Card>
       </Col>

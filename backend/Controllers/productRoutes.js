@@ -4,7 +4,6 @@ import asyncHandler from 'express-async-handler'
 const router = express.Router()
 import Product from '../models/productModel.js'
 
-
 //  description:  fetch all products
 router.get(
   '/',
@@ -14,20 +13,20 @@ router.get(
   })
 )
 
-router.get('/products/Mens', 
+router.get(
+  '/products/Mens',
   asyncHandler(async (req, res) => {
-    const products = await Product.find({category: Mens})
+    const products = await Product.find({ category: Mens })
     res.json(products)
-  }))
+  })
+)
 
-
- 
 // router.get(
 //   '/products/:category',
 //   asyncHandler(async (req, res) => {
 //     const product = await Product.find(
 //       { category: req.params.category })
-    
+
 //     if (product) {
 //       res.json(product)
 //     } else {
@@ -37,7 +36,6 @@ router.get('/products/Mens',
 //   })
 // )
 
-
 //  description:  fetch single products
 // route          Get/api/products/:id
 // access         Public
@@ -46,7 +44,7 @@ router.get(
   '/:id',
   asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id)
-    
+
     if (product) {
       res.json(product)
     } else {
@@ -58,12 +56,9 @@ router.get(
 
 //edit
 
-
-
 //add new
 
-
 //delete
-
+ 
 
 export default router

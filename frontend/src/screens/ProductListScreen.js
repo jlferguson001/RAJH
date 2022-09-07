@@ -15,20 +15,23 @@ const ProductListScreen = () => {
  const productList = useSelector(state => state.productList)
  const{loading, error, products} = productList
 
+ 
+
     useEffect(() => {
         dispatch(listProducts())
 
-    }, [dispatch])
+    }, [dispatch ])
 
-    //   const deleteHandler = (id) => {
-    //     if (window.confirm('Are you sure')) {
-    //       // DELETE PRODUCTS
-    //     }
-    //   }
+      const deleteHandler = (id) => {
+        if (window.confirm('Are you sure')) {
+          // DELETE PRODUCTS
+            
+        }
+      }
 
-    //   const createProductHandler = (product) => {
-    //     //   CREATE PRODUCT
-    //   }
+      const createProductHandler = (product) => {
+        //   CREATE PRODUCT
+      }
 
 
   return (
@@ -38,7 +41,7 @@ const ProductListScreen = () => {
           <h1>Products</h1>
         </Col>
         <Col className='text-right'>
-          <Button className='my-3'>
+          <Button className='my-3' onClick={createProductHandler}>
             <i className='fas fa-plus'></i> Create Product
           </Button>
         </Col>
@@ -73,14 +76,14 @@ const ProductListScreen = () => {
 
                 <td>
                   {/* <LinkContainer to={`/admin/product/${product._id}/edit`}> */}
-                    <Button variant='light' className='btn-sm'>
-                      <i className='fas fa-edit'></i>
-                    </Button>
+                  <Button variant='light' className='btn-sm'>
+                    <i className='fas fa-edit'></i>
+                  </Button>
                   {/* </LinkContainer> */}
                   <Button
                     variant='danger'
                     className='btn-sm'
-                    
+                    onClick={() => deleteHandler(product._id)}
                   >
                     <i className='fas fa-trash'></i>
                   </Button>

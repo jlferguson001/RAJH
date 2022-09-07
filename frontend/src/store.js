@@ -3,7 +3,8 @@ import thunk from 'redux-thunk'
 import {
   productListReducer,
   productDetailsReducer,
-  productListCategoryReducer
+  productListCategoryReducer,
+ 
 } from './reducers/productReducers'
 import {cartReducer} from './reducers/cartReducers'
 
@@ -13,6 +14,7 @@ const reducer = {
   productList: productListReducer,
   productDetails: productDetailsReducer,
   productListCategory: productListCategoryReducer,
+   
   cart: cartReducer,
 }
 
