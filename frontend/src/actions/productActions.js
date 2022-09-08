@@ -69,7 +69,7 @@ export const listProductCategory = (category) => async (dispatch) => {
     //want to dispatch the request.  pass in an object with a type.  This will call in the reducer
     dispatch({ type: PRODUCT_LIST_CATEGORY_REQUEST })
     //we want to now make our request
-    const { data } = await axios.get(`/api/products/${category}`)
+    const { data } = await axios.get(`/api/products/category/${category}`)
     console.log(data)
     dispatch({
       type: PRODUCT_LIST_CATEGORY_SUCCESS,

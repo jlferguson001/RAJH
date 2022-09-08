@@ -18,18 +18,27 @@ const CategoryScreen = () => {
   const { loading, error, products } = productListCategory
   const { category } = useParams()
 
-  useEffect(() => {
-    fetchData()
-    //   dispatch(listProductCategory)
-  }, [])
-  // console.log(category)
-  const fetchData = async () => {
-     const { data } = await axios.get(
-       `http://localhost:5005/api/products/products/Mens`
-     )
+  // useEffect(() => {
+  //   fetchData()
+  //   //   dispatch(listProductCategory)
+  // }, [])
+  // // console.log(category)
+
+  // const fetchData = async () => {
+  //   const data = await axios.get(`/api/products/category/Mens`).then(res => {
+  //     console.log(res.data);
+  //   }
+  //   )
+  //   console.log(data)
+  // }
+
+  // const fetchData = async () => {
+  //    const { data } = await axios.get(
+  //      `http://localhost:5005/api/products/products/Mens`
+  //    )
     
-    console.log(data)
-  }
+  //   console.log(data)
+  // }
 
   return (
     <>
