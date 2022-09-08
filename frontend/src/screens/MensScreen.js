@@ -4,7 +4,8 @@ import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import { listProducts } from '../actions/productActions'
+import { listProductCategory } from '../actions/productActions'
+import axios from 'axios'
  
 
 
@@ -14,17 +15,28 @@ const MensScreen = () => {
  const productList = useSelector(state => state.productList)
  const{loading, error, products} = productList
 
-    useEffect(() => {
-        dispatch(listProducts())
-
-    }, [dispatch])
-
+ useEffect(() => {
+  fetchData()
+    // dispatch(listProductCategory())
     
+}, [])
+// console.log(category)
+
+const fetchData = async () => {
+  const data = await axios.get(`/api/products/category/Mens`).then(res => {
+    console.log(res.data);
+  }
+  )
+  console.log(data)
+  
+}
+
+  
 
   return (
     <>
       <h1>Men's Frames</h1>
-      {/* {loading ? (
+      {loading ? (
         <Loader />
       ) : error ? (
         <Message variant='danger'>{error}</Message>
@@ -36,8 +48,8 @@ const MensScreen = () => {
               <Product product={product} />
             </Col>
           ))}
-        </Row>*/}
-      {/* )} */}
+        </Row>
+      )}
     </>
   )
 }
