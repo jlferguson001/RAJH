@@ -1,9 +1,9 @@
-import express, { response } from 'express'
+import express, { application, response } from 'express'
 import asyncHandler from 'express-async-handler'
 import Product from '../models/productModel.js'
 
 const router = express.Router()
-
+ 
 //  description:  fetch all products
 router.get(
   '/',
@@ -61,26 +61,46 @@ router.get(
 )
 
 //edit not working
-router.patch('/:id', async(req, res, next) =>{
+router.put('/:id', async(req, res, next) =>{
  
  
-  const id = req.params.id;
-  const updates = req.body
-  const options = {new: true};
   try{
+  const id = req.params.id;
+  const update = req.body
+  const options = {new: true};
   
-  const result = await Product.findByIdAndUpdate(id, updates, options);
-    res.send(result)
+  const result = await Product.findByIdAndUpdate(id, update, options);
+    res.send(result);
   }catch (error){
     console.log(error.message)
   }
-//   res.send('updating a single product')
+  // res.send('updating a single product')
 })
 //add new
 
 router.post('/', (req, res,next) => {
-   
-    res.send('product created');
+   console.log(req.body);
+   const product = new Product({
+    id: req.body.id,
+    name: req.body.name,
+    image: req.body.image,
+    brand: req.body.brand,
+    category: req.body.category,
+    color: req.body.color,
+    price: req.body.price,
+    coutInStock: req.body.coutInStock
+   })
+   product.save()
+   .then(result => {
+    console.log(result);
+    res.send(result)
+  
+   })
+   .catch(err => {
+    console.log(err.message)
+   })
+
+    
    
 })
 

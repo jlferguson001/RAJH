@@ -14,6 +14,8 @@ import ChildrensScreen from "./screens/ChildrensScreen";
 import ProductListScreen from "./screens/ProductListScreen";
 
 const App = () => {
+  const app = express()
+  app.use(express.json())
   // const params = useParams()
   // console.log(params.category)
   return (
